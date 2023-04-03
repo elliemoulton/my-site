@@ -1,0 +1,7 @@
+.weather-app {
+    padding: 7%;
+}
+
+.weather-app .capitalize {
+    text-transform: capitalize;
+}

@@ -1,0 +1,295 @@
+/*************  Coffee Calculator ************ */
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fffbeb;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.coffee-calculator {
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+    padding: 7% 7% 11%;
+}
+
+.coffee-calculator .box {
+    background: #30475e;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    height: 550px;
+    margin-left: 17%;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: relative;
+    width: 550px;
+}
+
+.coffee-calculator button {
+    position: relative;
+    background-color: #cbbbb0;
+    border-color: transparent;
+    border-radius: 6px;
+    top: 30px;
+    color: #f9f9f9;
+    display: block;
+    filter: drop-shadow(4px 4px 0 #192734);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin: auto;
+    padding: 12px 0;
+    text-align: center;
+    width: 130px;
+}
+
+.coffee-calculator button:hover {
+    background-color: #192734;
+    border-color: transparent;
+    filter: none;
+    top: 34px;
+    right: -4px;
+}
+
+.coffee-calculator .instructions {
+    margin: 40px;
+    color: #252525;
+}
+
+.coffee-calculator .brew-type-input {
+    background-color: #f9f9f9;
+    border-color: transparent;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    height: 70px;
+    padding: 0 0 0 2%;
+    width: 205px;
+    color: #252525;
+}
+
+.coffee-calculator .input {
+    padding-left: 25px;
+    padding-top: 40px;
+    height: 397px;
+}
+
+.coffee-calculator .cup-input {
+    background-color: #f9f9f9;
+    border-color: transparent;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    height: 70px;
+    margin: 0;
+    padding: 0 0 0 2%;
+    width: 95px;
+    color: #252525;
+}
+
+.coffee-calculator details > div {
+    padding: 1rem;
+}
+
+.coffee-calculator details summary {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.coffee-calculator details summary > * {
+    display: inline;
+}
+
+.coffee-calculator details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.coffee-calculator .input-row {
+    padding-bottom: 27.5px;
+}
+
+.coffee-calculator .instructions {
+    font-size: 1.1rem;
+    color: #252525;
+}
+
+.coffee-calculator .instructions summary h2 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #252525;
+}
+
+.coffee-calculator .left-column {
+    padding: 0;
+    text-align: left;
+}
+
+.coffee-calculator .results-data {
+    padding-left: 25px;
+    padding-top: 40px;
+}
+
+.coffee-calculator .results-right {
+    padding-left: 20%;
+    width: 185%;
+}
+
+.coffee-calculator .results-row {
+    padding-bottom: 1%;
+}
+
+.coffee-calculator .results-row .title {
+    padding-left: 10%;
+}
+
+.coffee-calculator .right-column {
+    padding: 0 0 0 5%;
+}
+
+.coffee-calculator h2 {
+    color: #f9f9f9;
+}
+
+.coffee-calculator .left-column h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-bottom: 3%;
+}
+
+.coffee-calculator .left-column p {
+    padding-bottom: 3%;
+    font-size: 1rem;
+}
+
+.coffee-calculator .right-column .top-group {
+    padding-bottom: 40px;
+}
+
+/* responsive styling */
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .coffee-calculator .right-column {
+        width: 100%;
+    }
+    .coffee-calculator .results-data .title {
+        width: 130%;
+        padding: 0;
+        /* margin: 4% 0 0; */
+    }
+    .coffee-calculator .results-right {
+        padding-left: 30%;
+    }
+    .coffee-calculator .left-column h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        padding-bottom: 2%;
+        margin: 0;
+    }
+    .coffee-calculator .left-column p {
+        padding-bottom: 2%;
+        font-size: 1.1rem;
+    }
+    .coffee-calculator .left-column {
+        padding: 5%;
+        width: 100%;
+    }
+    .coffee-calculator .box {
+        width: 85%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    .coffee-calculator .box {
+        margin: 0;
+        width: 110%;
+    }
+    .coffee-calculator .results-right {
+        padding-left: 50px;
+    }
+    .coffee-calculator .left-column {
+        padding: 3% 0 5% 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* start of phone styles */
+    .coffee-calculator {
+        padding: 5% 0 8% 5%;
+        margin: 0;
+    }
+    .coffee-calculator .left-column h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding-bottom: 1%;
+    }
+    .coffee-calculator .left-column p {
+        padding-bottom: 2%;
+        font-size: 1rem;
+    }
+    .coffee-calculator .box {
+        margin: auto;
+        width: 120%;
+        min-height: 550px;
+        padding-top: 15px;
+    }
+    .coffee-calculator .results-box {
+        margin: auto;
+        width: 120%;
+        min-height: 650px;
+    }
+    .coffee-calculator .results-data {
+        width: 185%;
+        padding: 3% 5% 0;
+    }
+    .coffee-calculator .results-data .title {
+        width: 185%;
+        padding: 0;
+        margin: 4% 0 0;
+    }
+    .coffee-calculator .results-right {
+        padding: 0;
+        margin: 1% 0 0;
+    }
+    .coffee-calculator button {
+        margin-top: 10px;
+        height: 58px;
+        top: 0;
+        display: block;
+        font-size: 1.2rem;
+        padding: 12px 0;
+        text-align: center;
+        width: 130px;
+    }
+    .coffee-calculator button:hover {
+        top: 4px;
+    }
+    .coffee-calculator .instructions {
+        margin: 0;
+        padding: 20% 0 15% 5%;
+        width: 130%;
+    }
+    .coffee-calculator .input {
+        margin-bottom: 5%;
+    }
+}

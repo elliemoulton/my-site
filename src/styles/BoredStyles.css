@@ -1,0 +1,152 @@
+/************** Bored **************/
+
+.bored-page {
+    background-color: #d58bae;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Tilt Warp', cursive;
+    color: #252525;
+}
+
+.bored-page h1 {
+    font-size: 2.3rem;
+}
+
+.bored-page .blue {
+    background-color: #65cff6;
+    height: 100vh;
+    padding: 0 7%;
+}
+.bored-page .blue h2 {
+    color: #18b7f2;
+}
+
+.bored-page .pink {
+    background-color: #d58bae;
+    height: 100vh;
+    padding: 0 7%;
+}
+.bored-page .pink h2 {
+    color: #c45a8b;
+}
+
+.bored-page .orange {
+    background-color: #ffa251;
+    height: 100vh;
+    padding: 0 7%;
+}
+.bored-page .orange h2 {
+    color: #ff7c0a;
+}
+
+.bored-page .green {
+    background-color: #94de7d;
+    height: 100vh;
+    padding: 0 7%;
+}
+.bored-page .green h2 {
+    color: #5dce3b;
+}
+
+.bored-page .purple {
+    background-color: #b0a6f2;
+    height: 100vh;
+    padding: 0 7%;
+}
+.bored-page .purple h2 {
+    color: #715ee8;
+}
+
+.bored-page .bored-box {
+    height: 170px;
+    background-color: #faf8ea;
+    border-radius: 40px;
+    top: 100px;
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+    max-width: 400px;
+    z-index: 1;
+    transition: all ease 1000ms;
+
+}
+
+.bored-page .bored-box.showBox {
+    /* transition: all ease 1000ms; */
+    min-height: 470px;
+    max-width: 520px;
+}
+
+.bored-page .activity-section {
+    height: 50px;
+    margin: auto;
+    padding-top: 2%;
+}
+
+.bored-page button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+    border: none;
+    background-color: #ffc933;
+    color: #faf8ea;
+    box-shadow: 2px 2px #f5b400;
+}
+
+.bored-page button:hover {
+    background-color: #f5b400;
+    box-shadow: 0px 0px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+.bored-page table {
+    text-align: left;
+    margin: 40px auto;
+}
+
+.bored-page td {
+    padding: 5px 12px;
+}
+
+/************* scales *************/
+
+.container {
+    width: 200px;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+.scale {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    /* transition: all 2s linear; */
+}
+
+.feasibility {
+    background-color: #65cff6;
+    border-radius: 20px;
+}
+
+.cost {
+    background-color: #d58bae;
+    border-radius: 20px;
+}
+
+.participants {
+    background-color: #b0a6f2;
+    border-radius: 20px;
+}
+
+/* responsive styling */
+@media screen and (max-width: 500px) {
+    .bored-page .bored-box {
+      max-width: 60%;
+      top: 130px;
+      padding: 10% 5%;
+    }  
+}

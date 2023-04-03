@@ -1,0 +1,501 @@
+body {
+    background-color: #fffbeb;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #b6a3ba;
+    color: #fffbeb;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 1%;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+/* ************ HOME PAGE ************ */
+.home-page {
+    background-color: #fffbeb;
+}
+
+.home-page .head-section {
+    position: relative;
+}
+
+.home-page header {
+    background-color: #fffbeb;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-page header h1 {
+    color: #9a5434;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 5rem;
+    margin: 0 0 18px;
+    padding-left: 10%;
+    padding-top: 7%;
+}
+
+.home-page header h2 {
+    color: #c97556;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.5rem;
+    margin: 0 0 25px;
+    padding-left: 10%;
+}
+
+.home-page header p {
+    color: #28192c;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 0 90px;
+    padding-left: 10%;
+    width: 30%;
+}
+
+.home-page a {
+    color: #fffbeb;
+}
+
+.home-page a:hover {
+    color: #fffbeb;
+}
+
+.home-page header button {
+    background-color: #28192c;
+    border-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 0 #b6a3ba);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 10%;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.home-page header button:hover {
+    background-color: #b6a3ba;
+    filter: none;
+    bottom: -4px;
+    right: -4px;
+}
+
+.home-page button span {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.home-page .profile-img {
+    margin-left: 55%;
+    margin-top: -25%;
+    width: 30%;
+}
+
+.home-page .custom-shape-divider-bottom-1674668410 {
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(180deg);
+    width: 100%;
+}
+
+.home-page .custom-shape-divider-bottom-1674668410 svg {
+    display: block;
+    height: 180px;
+    position: relative;
+    transform: rotateY(180deg);
+    width: calc(100% + 1.3px);
+}
+
+.home-page .custom-shape-divider-bottom-1674668410 .shape-fill {
+    fill: #28192c;
+}
+
+.home-page .portfolio-section {
+    background-color: #28192c;
+    min-height: 80vh;
+    padding: 5%;
+    position: relative;
+}
+
+.home-page .portfolio-section h2 {
+    color: #c97556;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 0 0 5%;
+    padding-left: 20px;
+}
+
+.home-page .card {
+    margin: 4%;
+}
+
+.home-page .hide-cards {
+    /* opacity: 0; */
+    filter: blur(5px);
+    transform: translateX(-150%);
+    transition: all 2s;
+}
+
+.home-page .animate-cards {
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.home-page .animate-cards:nth-child(1) {
+    transition-delay: 400ms;
+}
+
+.home-page .animate-cards:nth-child(2) {
+    transition-delay: 600ms;
+}
+
+.home-page .animate-cards:nth-child(3) {
+    transition-delay: 800ms;
+}
+
+.home-page .portfolio-section button {
+    background-color: #c97556;
+    border-color: transparent;
+    border-radius: 6px;
+    color: #fffbeb;
+    cursor: pointer;
+    display: block;
+    filter: drop-shadow(4px 4px 0 #9a5434);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+    width: 150px;
+}
+
+.home-page .portfolio-section button:hover {
+    background-color: #9a5434;
+    filter: none;
+    bottom: -4px;
+    right: -4px;
+}
+
+.home-page .card .content {
+    color: #fffbeb;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -10px;
+}
+
+.home-page .card .title {
+    color: #fffbeb;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.home-page .card-img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.home-page .contact-section {
+    background-color: #fffbeb;
+    color: #9a5434;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 400px;
+    padding-top: 230px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.home-page .contact-section .title {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 40px;
+    margin: 0;
+}
+
+.home-page .contact-section .email {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.home-page .contact-section .icon {
+    color: #9a5434;
+    margin: 30px 25px;
+}
+
+.home-page .contact-section .icon:hover {
+    color: #c97556;
+}
+
+/* ************ ABOUT PAGE ************ */
+.about-me-page {
+    background-color: #b6a3ba;
+    padding-bottom: 8%;
+}
+
+.about-me-page .background-img {
+    width: 100%;
+    opacity: 15%;
+    position: fixed;
+    top: 0;
+}
+
+.about-me-page .img-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+}
+
+.about-me-page .bio {
+    background-color: #fffbeb;
+    border-radius: 30px;
+    box-shadow: 10px 10px #28192c;
+    color: #2f1b12;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    line-height: 170%;
+    margin: 5% auto;
+    padding: 3%;
+    position: relative;
+    width: 55%;
+    z-index: 1;
+}
+
+/* ************ CONTACT PAGE ************ */
+
+.contact-page {
+    background-color: #b6a3ba;
+}
+
+.MuiCard-root {
+    margin-bottom: 4%;
+}
+
+/* ************ RESUME PAGE ************ */
+.resume-page {
+    background-color: #b6a3ba;
+    padding-bottom: 8%;
+    margin-top: -30px;
+    min-height: 100vh;
+}
+
+.resume-page .background-img {
+    width: 100%;
+    opacity: 15%;
+    position: fixed;
+    top: 0;
+}
+
+.resume-page h1 {
+    color: #28192c;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    padding-left: 4%;
+    padding-top: 4%;
+}
+
+.resume-page a {
+    color: red;
+}
+
+/* ************ PORTFOLIO PAGE ************ */
+.portfolio-page {
+    background-color: #fffbeb;
+    padding-bottom: 8%;
+}
+
+.portfolio-page .background-img {
+    width: 100%;
+    opacity: 15%;
+    position: fixed;
+    top: 0;
+}
+.portfolio-page h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #28192c;
+    font-size: 4rem;
+    padding-top: 3%;
+    padding-left: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-page .MuiGrid-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-page .card {
+    background-color: #9a5434;
+    padding: 6%;
+    border-radius: 6px;
+    margin: 7%;
+    height: 315px;
+}
+
+.portfolio-page .card:hover {
+    background-color: #c97556;
+    margin: 5%;
+    height: 325px;
+}
+
+.portfolio-page .content {
+    color: #fffbeb;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -10px;
+}
+
+.portfolio-page .title {
+    color: #fffbeb;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.portfolio-page .card-img {
+    max-height: 100%;
+    max-width: 100%;
+    /* height: 180px;
+    width: 315px; */
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.portfolio-page footer {
+    margin-top: 4%;
+}
+
+/* ************ Tilt ************ */
+.custom-shape-divider-top-1674671710 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1674671710 svg {
+    position: relative;
+    display: block;
+    width: calc(184% + 1.3px);
+    height: 170px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1674671710 .shape-fill {
+    fill: #28192c;
+}
+
+/* ************ Sidebar Nav ************ */
+
+.navBar {
+    position: relative;
+}
+
+.navBar button {
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    z-index: 10;
+}
+
+.menuNav {
+    bottom: 0;
+    height: 0;
+    list-style: none;
+    max-width: 280px;
+    overflow-y: scroll;
+    overflow: hidden;
+    position: fixed;
+    right: 10px;
+    top: 0;
+    transition: ease 30ms;
+    width: 0;
+    z-index: 9;
+}
+
+.menuNav.showMenu {
+    background: #fffbeb;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -10px #2f1b12;
+    height: 400px;
+    transition: ease 300ms;
+    width: 100%;
+}
+
+.navbar-link {
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navBar a {
+    color: #9a5434;
+}
+
+.navBar a:hover {
+    color: #c97556;
+}
+
+.menuNav li:first-child {
+    margin-top: 3.5rem;
+}
+
+.navbar-button {
+    background-color: #b6a3ba;
+    border-radius: 6px;
+    border: none;
+    color: #fffbeb;
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-icon {
+    height: 35px;
+}

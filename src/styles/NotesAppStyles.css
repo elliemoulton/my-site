@@ -1,0 +1,388 @@
+/* ************ Notes App ************ */
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.notes-app {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0 8%;
+    color: #121212;
+}
+
+.notes-app header h1 {
+    font-family: 'Gloock', serif;
+    font-size: 4rem;
+    margin: 0;
+    padding: 4% 0 0;
+}
+
+.notes-app .theme-changer {
+    border: solid;
+    border-color: #f9f5e7;
+    border-radius: 50%;
+    border-width: 2px;
+    cursor: pointer;
+    float: left;
+    height: 22px;
+    margin: 15px 15px 30px 0;
+    width: 22px;
+}
+
+.notes-app .note {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0;
+    width: 260px;
+    margin: 2% 1.6%;
+    float: left;
+}
+
+.notes-app .title-section {
+    padding: 2px 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.notes-app .note h2 {
+    font-size: 1.2rem;
+    font-weight: 500px;
+}
+
+.notes-app .note p {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 17px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.notes-app button {
+    color: #f9f5e7;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+.notes-app button span {
+    position: relative;
+    top: 3px;
+}
+
+.notes-app .note button {
+    position: relative;
+    float: right;
+    margin: 10px;
+}
+
+.notes-app form {
+    position: relative;
+    background-color: #ffffff;
+    width: 45%;
+    margin: 100px auto 40px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .notes-app form {
+        width: 65%;
+        position: relative;
+        background-color: #ffffff;
+        margin: 100px auto 40px auto;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .notes-app .note {
+        width: 42%;
+        margin: 3% 4%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .notes-app form {
+        width: 85%;
+        position: relative;
+        background-color: #ffffff;
+        margin: 100px auto 40px auto;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .notes-app .note {
+        width: 82%;
+        margin: 5% 9%;
+    }
+}
+
+.notes-app form input,
+form textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+}
+
+.notes-app form button {
+    bottom: -18px;
+    position: absolute;
+    right: 18px;
+    width: 36px;
+}
+
+/* themes */
+.notes-app .red {
+    background-color: #fd7489;
+}
+
+.notes-app .orange {
+    background-color: #ffc98f;
+}
+
+.notes-app .yellow {
+    background-color: #fdfdc0;
+}
+
+.notes-app .green {
+    background-color: #b4c8b5;
+}
+
+.notes-app .blue {
+    background-color: #5596cf;
+}
+
+.notes-app .purple {
+    background-color: #9f81d0;
+}
+
+.notes-app .pink {
+    background-color: #fccafd;
+}
+
+/* red theme */
+.red-theme {
+    background-color: #fd7489;
+    min-height: 200vh;
+}
+
+.red-theme header h1 {
+    color: #7d1424;
+}
+
+.red-theme form button {
+    background-color: #c9203a;
+}
+
+.red-theme form button:hover {
+    background-color: #fc2847;
+}
+
+.red-theme .note .title-section {
+    background-color: #7d3944;
+    color: #ffffff;
+}
+
+.red-theme .note button {
+    background-color: #c9203a;
+}
+
+.red-theme .note button:hover {
+    background-color: #fc2847;
+}
+
+/* orange theme */
+.orange-theme {
+    background-color: #ffc98f;
+    min-height: 200vh;
+}
+
+.orange-theme header h1 {
+    color: #805221;
+}
+
+.orange-theme form button {
+    background-color: #cc8335;
+}
+
+.orange-theme form button:hover {
+    background-color: #ffa343;
+}
+
+.orange-theme .note .title-section {
+    background-color: #806447;
+    color: #ffffff;
+}
+
+.orange-theme .note button {
+    background-color: #cc8335;
+}
+
+.orange-theme .note button:hover {
+    background-color: #ffa343;
+}
+
+/* yellow theme */
+.yellow-theme {
+    background-color: #fdfdc0;
+    min-height: 200vh;
+}
+
+.yellow-theme header h1 {
+    color: #7d7d5f;
+}
+
+.yellow-theme form button {
+    background-color: #c9c95d;
+}
+
+.yellow-theme form button:hover {
+    background-color: #fdfc74;
+}
+
+.yellow-theme .note .title-section {
+    background-color: #7d7d39;
+    color: #ffffff;
+}
+
+.yellow-theme .note button {
+    background-color: #c9c95d;
+}
+
+.yellow-theme .note button:hover {
+    background-color: #fdfc74;
+}
+
+/* green theme */
+.green-theme {
+    background-color: #b4c8b5;
+    min-height: 200vh;
+}
+
+.green-theme header h1 {
+    color: #373d38;
+}
+
+.green-theme form button {
+    background-color: #538a57;
+}
+
+.green-theme form button:hover {
+    background-color: #71bc77;
+}
+
+.green-theme .note .title-section {
+    background-color: #253d27;
+    color: #ffffff;
+}
+
+.green-theme .note button {
+    background-color: #538a57;
+}
+
+.green-theme .note button:hover {
+    background-color: #71bc77;
+}
+
+/* blue theme */
+.blue-theme {
+    background-color: #5596cf;
+    min-height: 200vh;
+}
+
+.blue-theme header h1 {
+    color: #092e4f;
+}
+
+.blue-theme form button {
+    background-color: #3e6d97;
+}
+
+.blue-theme form button:hover {
+    background-color: #1779cf;
+}
+
+.blue-theme .note .title-section {
+    background-color: #0e4c82;
+    color: #ffffff;
+}
+
+.blue-theme .note button {
+    background-color: #3e6d97;
+}
+
+.blue-theme .note button:hover {
+    background-color: #1779cf;
+}
+
+/* purple theme */
+.purple-theme {
+    background-color: #9f81d0;
+    min-height: 200vh;
+}
+
+.purple-theme header h1 {
+    color: #372c47;
+}
+
+.purple-theme form button {
+    background-color: #562f94;
+}
+
+.purple-theme form button:hover {
+    background-color: #7441c8;
+}
+
+.purple-theme .note .title-section {
+    background-color: #291747;
+    color: #ffffff;
+}
+
+.purple-theme .note button {
+    background-color: #562f94;
+}
+
+.purple-theme .note button:hover {
+    background-color: #7441c8;
+}
+
+/* pink theme */
+.pink-theme {
+    background-color: #fccafd;
+    min-height: 200vh;
+}
+
+.pink-theme header h1 {
+    color: #7c3e7d;
+}
+
+.pink-theme form button {
+    background-color: #c865c9;
+}
+
+.pink-theme form button:hover {
+    background-color: #fb7ffd;
+}
+
+.pink-theme .note .title-section {
+    background-color: #7d647d;
+    color: #ffffff;
+}
+
+.pink-theme .note button {
+    background-color: #c865c9;
+}
+
+.pink-theme .note button:hover {
+    background-color: #fb7ffd;
+}
